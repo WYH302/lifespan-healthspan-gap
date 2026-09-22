@@ -9,6 +9,12 @@ This repository contains the two non-backup Python scripts available in the loca
 - `scripts/13_age60_module.py`: WHO age-60 LE/HALE analysis, conversion summaries, and figures.
 - `scripts/14_combined_main_figure.py`: composite figure from previously generated summary tables.
 
+## Real-world Robustness & Edge Deployment
+
+For this population analysis, robustness concerns source revisions, missing country-years, weighting choices and uncertainty estimates, not lighting or image occlusion. The missing upstream panel and summary tables prevent rerunning those checks from this snapshot alone.
+
+There is no trained neural model or edge-inference target in the two released scripts. Runtime and memory can be recorded once a frozen input set is supplied. Do not attach model-weight or GPU-demo badges to an analysis that does not use them.
+
 ## Dependencies
 
 Install Python and run `python -m pip install -r requirements.txt`. Dependency versions are not pinned because the original environment was not available; compatibility has not been validated.
